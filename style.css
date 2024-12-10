@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  height: 500px;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sq-animation {
+  background-color: violet;
+  height: 80px;
+  width: 80px;
+  position: relative;
+  animation: move 12s infinite;
+}
+
+@keyframes move {
+  0% {
+    background-color: violet;
+    left: 0px;
+    top: 0px;
+  }
+
+  16.67% {
+    background-color: violet;
+    left: 420px;
+    top: 0px;
+  }
+
+  25% {
+    background-color: #51ff12;
+    left: 420px;
+    top: 0px;
+  }
+
+  41.67% {
+    background-color: #51ff12;
+    left: 420px;
+    top: 420px;
+  }
+
+  50% {
+    background-color: lightblue;
+    left: 420px;
+    top: 420px;
+  }
+
+  66.67% {
+    background-color: lightblue;
+    left: 0px;
+    top: 420px;
+  }
+
+  75% {
+    background-color: #d240ff;
+    left: 0px;
+    top: 420px;
+  }
+
+  91.67% {
+    background-color: #d240ff;
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    background-color: violet;
+    left: 0px;
+    top: 0px;
+  }
+}
